@@ -1,11 +1,14 @@
 #!/bin/bash -x
+
+# 5. b. Rectangular Plot of 60 feet x 40 feet in meters
+
 l=60;
 b=40;
-lb=$(($l * $b));
+area=$(($l * $b));
 c=3;
-area=$((($l*$b)/$c));
+areaInMetre=$((($area)/$c));
 
-echo "Area in feet is : $lb";
+echo "Area in feet is : $area ft.sq";
 
 
-echo "Area in meters is : " $area;
+echo "Area in meters is : " $areaInMetre " m.sq";
