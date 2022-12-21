@@ -2,7 +2,7 @@
 
 #Selection Practice Problems with if, elif and else
 
-#Enter 3 Numbers do following arithmetic operation and find the one that is maximum and minimum
+# 4 . ppppppEnter 3 Numbers do following arithmetic operation and find the one that is maximum and minimum
 # 1. a + b * c 
 # 2. a % b + c 
 # 3. c + a / b
