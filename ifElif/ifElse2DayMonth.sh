@@ -2,20 +2,22 @@
 
 # 2. Write a program that takes day and month from the command line and prints true if day of month is between March 20 and June 20, false otherwise.
 
-read -p "Enter Day:" day;
-read -p "Enter Month:" month;
+read -p "Enter Day:" day
+read -p "Enter Month:" month
 
+flag="False"
 
-
-if (( month==3 && day>=20 ))
+if [[ $month -ge 3 && $month -le 6 ]];
 then
-	echo "True";
-elif (( month>3 && month<6 ))
+	dayLimit=$((30+($month%2)))
+	if [[ $day -ge 1 && $date -le $dayLimit ]];
 then
-	echo "True";
-elif (( month==6 && day<=20 ))
+		combination=$((($month*100)+$day))
+		if [[ $combination -ge 320 && $combination -le 620 ]];
 then
-	echo "True";
-else
-	echo "False";
+			flag="True"
+		fi
+	fi
 fi
+
+echo "$month/$day $flag"
