@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-read -p "Enter value of n:" n
+read -p "Enter value of nth Harmonic Number:" n
 
 echo -ne "Ha="
 
